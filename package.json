@@ -1,0 +1,21 @@
+{
+  "name": "ThomasHjemmeside",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass --watch ./styles/index.scss ./bundle.css --importer node_modules/node-sass-import",
+    "build": "node-sass ./styles/index.scss ./bundle.css --importer node_modules/node-sass-import",
+    "start": "yarn build && yarn watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "node-sass-import": "^2.0.1"
+  }
+}

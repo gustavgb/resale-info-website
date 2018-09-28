@@ -1,0 +1,54 @@
+$primary: #b71d1d;
+$gray-800: #343a40;
+$dark: $gray-800;
+
+$link-color: $dark;
+$link-hover-color: $dark;
+
+$top-height: 100px;
+
+@import 'bootstrap/scss/bootstrap';
+
+html, body {
+  font-size: 16px;
+}
+
+.top {
+  background-color: $primary;
+  padding: 30px 0;
+  height: $top-height;
+  border-bottom: 3px solid #991616;
+}
+
+.logo-container {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+
+  color: $white;
+}
+
+.nav-link {
+  &, a {
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+footer {
+  background-color: map-get($grays, '900');
+  padding: 40px 0;
+
+  span {
+    color: map-get($grays, '700');
+  }
+}
+
+.header {
+  height: calc(100vh - #{$top-height});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
